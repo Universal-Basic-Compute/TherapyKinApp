@@ -14,7 +14,7 @@ export default function ExploreScreen() {
       headerImage={
         <IconSymbol
           size={310}
-          color="#808080"
+          color="#a571ff"
           name="brain.head.profile"
           style={styles.headerImage}
         />

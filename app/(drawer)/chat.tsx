@@ -91,10 +91,10 @@ export default function ChatScreen() {
           multiline
         />
         <TouchableOpacity style={styles.sendButton} onPress={sendMessage}>
-          <IconSymbol name="arrow.up.circle.fill" size={36} color="#4A90E2" />
+          <IconSymbol name="arrow.up.circle.fill" size={36} color="#00c5bc" />
         </TouchableOpacity>
         <TouchableOpacity style={styles.voiceButton}>
-          <IconSymbol name="mic.fill" size={24} color="#4A90E2" />
+          <IconSymbol name="mic.fill" size={24} color="#00c5bc" />
         </TouchableOpacity>
       </ThemedView>
     </KeyboardAvoidingView>
@@ -123,11 +123,25 @@ const styles = StyleSheet.create({
   },
   userMessage: {
     alignSelf: 'flex-end',
-    backgroundColor: '#DCF8C6',
+    backgroundColor: '#00c5bc',
+    backgroundImage: 'linear-gradient(to right, #00c5bc, #4fffee)',
+    shadowColor: 'rgba(0, 197, 188, 0.2)',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 1,
+    shadowRadius: 10,
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.1)',
   },
   aiMessage: {
     alignSelf: 'flex-start',
-    backgroundColor: '#E5E5EA',
+    backgroundColor: '#f1f5f9',
+    backgroundImage: 'linear-gradient(to right, #f1f5f9, #ffffff)',
+    borderWidth: 1,
+    borderColor: 'rgba(0, 0, 0, 0.05)',
+    shadowColor: 'rgba(0, 0, 0, 0.05)',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 1,
+    shadowRadius: 8,
   },
   inputContainer: {
     flexDirection: 'row',

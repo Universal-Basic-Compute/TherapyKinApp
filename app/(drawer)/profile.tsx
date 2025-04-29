@@ -22,31 +22,31 @@ export default function ProfileScreen() {
       
       <ThemedView style={styles.menuSection}>
         <TouchableOpacity style={styles.menuItem}>
-          <IconSymbol name="person.fill" size={24} color="#4A90E2" />
+          <IconSymbol name="person.fill" size={24} color="#00c5bc" />
           <ThemedText style={styles.menuText}>Account Settings</ThemedText>
           <IconSymbol name="chevron.right" size={20} color="#888" />
         </TouchableOpacity>
         
         <TouchableOpacity style={styles.menuItem}>
-          <IconSymbol name="chart.bar.fill" size={24} color="#4A90E2" />
+          <IconSymbol name="chart.bar.fill" size={24} color="#00c5bc" />
           <ThemedText style={styles.menuText}>Progress Tracking</ThemedText>
           <IconSymbol name="chevron.right" size={20} color="#888" />
         </TouchableOpacity>
         
         <TouchableOpacity style={styles.menuItem}>
-          <IconSymbol name="creditcard.fill" size={24} color="#4A90E2" />
+          <IconSymbol name="creditcard.fill" size={24} color="#00c5bc" />
           <ThemedText style={styles.menuText}>Subscription</ThemedText>
           <IconSymbol name="chevron.right" size={20} color="#888" />
         </TouchableOpacity>
         
         <TouchableOpacity style={styles.menuItem}>
-          <IconSymbol name="bell.fill" size={24} color="#4A90E2" />
+          <IconSymbol name="bell.fill" size={24} color="#00c5bc" />
           <ThemedText style={styles.menuText}>Notifications</ThemedText>
           <IconSymbol name="chevron.right" size={20} color="#888" />
         </TouchableOpacity>
         
         <TouchableOpacity style={styles.menuItem}>
-          <IconSymbol name="lock.fill" size={24} color="#4A90E2" />
+          <IconSymbol name="lock.fill" size={24} color="#00c5bc" />
           <ThemedText style={styles.menuText}>Privacy Settings</ThemedText>
           <IconSymbol name="chevron.right" size={20} color="#888" />
         </TouchableOpacity>
@@ -56,19 +56,19 @@ export default function ProfileScreen() {
         <ThemedText type="subtitle">Support</ThemedText>
         
         <TouchableOpacity style={styles.menuItem}>
-          <IconSymbol name="questionmark.circle.fill" size={24} color="#4A90E2" />
+          <IconSymbol name="questionmark.circle.fill" size={24} color="#00c5bc" />
           <ThemedText style={styles.menuText}>Help Center</ThemedText>
           <IconSymbol name="chevron.right" size={20} color="#888" />
         </TouchableOpacity>
         
         <TouchableOpacity style={styles.menuItem}>
-          <IconSymbol name="envelope.fill" size={24} color="#4A90E2" />
+          <IconSymbol name="envelope.fill" size={24} color="#00c5bc" />
           <ThemedText style={styles.menuText}>Contact Support</ThemedText>
           <IconSymbol name="chevron.right" size={20} color="#888" />
         </TouchableOpacity>
         
         <TouchableOpacity style={styles.menuItem}>
-          <IconSymbol name="doc.text.fill" size={24} color="#4A90E2" />
+          <IconSymbol name="doc.text.fill" size={24} color="#00c5bc" />
           <ThemedText style={styles.menuText}>Terms & Privacy Policy</ThemedText>
           <IconSymbol name="chevron.right" size={20} color="#888" />
         </TouchableOpacity>

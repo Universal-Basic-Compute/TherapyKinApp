@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
   },
   chatButton: {
-    backgroundColor: '#4A90E2',
+    backgroundColor: '#00c5bc',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
