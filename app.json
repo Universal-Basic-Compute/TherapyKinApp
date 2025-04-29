@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "TherapyKinApp",
+    "name": "TherapyKin Mobile",
     "slug": "TherapyKinApp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "therapykin",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {

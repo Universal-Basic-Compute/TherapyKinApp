@@ -7,7 +7,7 @@ import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { IconSymbol } from '@/components/ui/IconSymbol';
 
-export default function TabTwoScreen() {
+export default function ExploreScreen() {
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
@@ -15,81 +15,72 @@ export default function TabTwoScreen() {
         <IconSymbol
           size={310}
           color="#808080"
-          name="chevron.left.forwardslash.chevron.right"
+          name="brain.head.profile"
           style={styles.headerImage}
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Explore</ThemedText>
+        <ThemedText type="title">Explore TherapyKin</ThemedText>
       </ThemedView>
-      <ThemedText>This app includes example code to help you get started.</ThemedText>
-      <Collapsible title="File-based routing">
+      <ThemedText>Discover how TherapyKin can support your mental health journey.</ThemedText>
+      
+      <Collapsible title="Evidence-Based Approaches">
         <ThemedText>
-          This app has two screens:{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/explore.tsx</ThemedText>
+          TherapyKin incorporates techniques from established therapeutic modalities:
         </ThemedText>
         <ThemedText>
-          The layout file in <ThemedText type="defaultSemiBold">app/(tabs)/_layout.tsx</ThemedText>{' '}
-          sets up the tab navigator.
+          • Cognitive Behavioral Therapy (CBT){'\n'}
+          • Dialectical Behavior Therapy (DBT){'\n'}
+          • Acceptance and Commitment Therapy (ACT){'\n'}
+          • Mindfulness practices
         </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/router/introduction">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Android, iOS, and web support">
         <ThemedText>
-          You can open this project on Android, iOS, and the web. To open the web version, press{' '}
-          <ThemedText type="defaultSemiBold">w</ThemedText> in the terminal running this project.
+          All approaches are backed by research and clinical expertise.
         </ThemedText>
       </Collapsible>
-      <Collapsible title="Images">
+      
+      <Collapsible title="Flexible Session Formats">
         <ThemedText>
-          For static images, you can use the <ThemedText type="defaultSemiBold">@2x</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">@3x</ThemedText> suffixes to provide files for
-          different screen densities
+          TherapyKin adapts to your needs with multiple session options:
         </ThemedText>
-        <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
-        <ExternalLink href="https://reactnative.dev/docs/images">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
+        <ThemedText>
+          • Quick 5-minute check-ins during busy days{'\n'}
+          • Deep conversations when you need more support{'\n'}
+          • Middle-of-the-night assistance when thoughts feel heaviest
+        </ThemedText>
       </Collapsible>
-      <Collapsible title="Custom fonts">
+      
+      <Collapsible title="Progress Tracking">
         <ThemedText>
-          Open <ThemedText type="defaultSemiBold">app/_layout.tsx</ThemedText> to see how to load{' '}
-          <ThemedText style={{ fontFamily: 'SpaceMono' }}>
-            custom fonts such as this one.
-          </ThemedText>
+          Visualize your mental health journey with our tracking tools:
         </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/versions/latest/sdk/font">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
+        <ThemedText>
+          • Mood tracking over time{'\n'}
+          • Pattern recognition{'\n'}
+          • Technique effectiveness monitoring{'\n'}
+          • Goal setting and achievement tracking
+        </ThemedText>
       </Collapsible>
-      <Collapsible title="Light and dark mode components">
+      
+      <Collapsible title="Subscription Plans">
         <ThemedText>
-          This template has light and dark mode support. The{' '}
-          <ThemedText type="defaultSemiBold">useColorScheme()</ThemedText> hook lets you inspect
-          what the user's current color scheme is, and so you can adjust UI colors accordingly.
+          Choose the plan that fits your needs:
         </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/develop/user-interface/color-themes/">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
+        <ThemedText>
+          • <ThemedText type="defaultSemiBold">Free</ThemedText>: 3 sessions, basic features{'\n'}
+          • <ThemedText type="defaultSemiBold">Basic</ThemedText>: $39/month, 8 sessions per month{'\n'}
+          • <ThemedText type="defaultSemiBold">Standard</ThemedText>: $69/month, 30 sessions per month{'\n'}
+          • <ThemedText type="defaultSemiBold">Premium</ThemedText>: $119/month, unlimited sessions
+        </ThemedText>
+        <ThemedText>
+          Annual plans available with 20% savings.
+        </ThemedText>
       </Collapsible>
-      <Collapsible title="Animations">
+      
+      <Collapsible title="Important Note">
         <ThemedText>
-          This template includes an example of an animated component. The{' '}
-          <ThemedText type="defaultSemiBold">components/HelloWave.tsx</ThemedText> component uses
-          the powerful <ThemedText type="defaultSemiBold">react-native-reanimated</ThemedText>{' '}
-          library to create a waving hand animation.
+          TherapyKin is not a replacement for professional mental health treatment. If you're experiencing a mental health emergency, please contact a crisis helpline or emergency services immediately.
         </ThemedText>
-        {Platform.select({
-          ios: (
-            <ThemedText>
-              The <ThemedText type="defaultSemiBold">components/ParallaxScrollView.tsx</ThemedText>{' '}
-              component provides a parallax effect for the header image.
-            </ThemedText>
-          ),
-        })}
       </Collapsible>
     </ParallaxScrollView>
   );
