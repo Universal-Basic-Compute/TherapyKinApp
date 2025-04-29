@@ -9,6 +9,8 @@ The TherapyKin API provides programmatic access to the TherapyKin platform, allo
 AI capabilities into their applications. This reference documents all available endpoints, request/response formats, and
 authentication requirements.
 
+Base URL: https://therapykin.ai/
+
 
 API Versioning
 
