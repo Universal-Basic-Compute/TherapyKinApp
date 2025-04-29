@@ -3,8 +3,10 @@ import { StyleSheet, TouchableOpacity, ScrollView, Image } from 'react-native';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { IconSymbol } from '@/components/ui/IconSymbol';
+import { useAuth } from '@/context/AuthContext';
 
 export default function ProfileScreen() {
+  const { logout, user } = useAuth();
   return (
     <ScrollView style={styles.container}>
       <ThemedView style={styles.header}>
@@ -16,8 +18,8 @@ export default function ProfileScreen() {
           source={require('@/assets/images/icon.png')} 
           style={styles.profileImage} 
         />
-        <ThemedText type="subtitle">Guest User</ThemedText>
-        <ThemedText>Free Plan • 3 sessions remaining</ThemedText>
+        <ThemedText type="subtitle">{user?.firstName || 'Guest User'}</ThemedText>
+        <ThemedText>{user?.email || 'Free Plan • 3 sessions remaining'}</ThemedText>
       </ThemedView>
       
       <ThemedView style={styles.menuSection}>
@@ -74,7 +76,7 @@ export default function ProfileScreen() {
         </TouchableOpacity>
       </ThemedView>
       
-      <TouchableOpacity style={styles.signOutButton}>
+      <TouchableOpacity style={styles.signOutButton} onPress={logout}>
         <ThemedText style={styles.signOutText}>Sign Out</ThemedText>
       </TouchableOpacity>
       
